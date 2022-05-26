@@ -1,0 +1,16 @@
+<h1 class="main">Shopping cart</h1>
+<ul class="products-list tableHead">
+    <li class="products-list-title row">
+        <div class="col-product">Product details</div>
+        <div class="col-quantity">Quantity</div>
+        <div class="col-price">Price</div>
+        <div class="col-total">Total</div>
+    </li>
+</ul>
+
+
+<ul class="products-list">
+    <li class="product row" *ngFor="let product of this.availableProducts$ | async | keyvalue">
+        <app-shopping-cart-row [product]="product.value"></app-shopping-cart-row>
+    </li>
+</ul>

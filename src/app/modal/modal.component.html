@@ -1,0 +1,29 @@
+<div class="modalContainer App" *ngIf="productModal!==null" [@inOutAnimation]>
+    <div class="modalContent">
+        <div class="columnImage"
+            [style.backgroundImage]="'url(assets/product-images-modal/'+ productModal.code +'.jpg)'"
+            [style.backgroundColor]="'#f3f3f3'">
+
+        </div>
+        <div class="columnData">
+            <div class="closeButton">
+                <button class="close" (click)="closeModal()">&times;</button>
+            </div>
+            <div class="modalPriceRow">
+                <h1 class="main">{{productModal.name}}<span class="priceTitle">{{productModal.price}}€</span></h1>
+            </div>
+            <div class="modalInfoRow">
+                <p>This lore ipsum should be remplaced by product.info in the future.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies, suscipit porttitor dui leo taciti
+                    habitant mollis vitae ridiculus, commodo odio platea lacinia facilisis potenti sociosqu. Facilisi
+                    elementum enim venenatis dictum quisque himenaeos nisl, ac diam dui proin nec hendrerit hac nisi.
+                </p>
+            </div>
+            <div class="modalProductCodeRow">
+                Product code {{productModal.code}}
+            </div>
+            <button class="modalButtonAddToCart" (click)="addToCart()">Add to cart</button>
+
+        </div>
+    </div>
+</div>

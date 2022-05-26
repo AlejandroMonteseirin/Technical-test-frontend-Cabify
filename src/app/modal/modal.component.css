@@ -1,0 +1,70 @@
+.modalContainer {
+    z-index: 1000;
+}
+
+.modalContent {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.columnImage {
+    width: 70%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+
+}
+
+
+
+.columnData {
+    width: 30%;
+    height: 100%;
+    padding: 1em;
+}
+
+.closeButton {
+    text-align: right;
+}
+
+.close {
+    font-size: 45px;
+    background-color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+.priceTitle{
+    float: right;
+    padding-right: 3em;
+}
+.modalPriceRow{
+  padding-top: 4em;
+}
+.modalInfoRow{
+    margin-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(33, 34, 64, 0.16);
+
+}
+.modalProductCodeRow{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    font-weight: 200;
+}
+.modalButtonAddToCart{
+    margin-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    border-radius: 4px;
+    background: #7350ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 14px;
+    cursor: pointer;
+}

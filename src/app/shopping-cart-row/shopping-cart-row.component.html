@@ -1,0 +1,23 @@
+<div class="col-product" (click)="enableModal()" >
+    <figure class="product-image">
+        <img [src]="'../assets/products-images/'+ product.code +'.png'" [alt]="product.name" />
+        <div class="product-description">
+            <h1>{{product.name}}</h1>
+            <p class="product-code">Product code {{product.code}}</p>
+        </div>
+    </figure>
+</div>
+<div class="col-quantity" >
+    <button class="count" (click)="changeQuantity(quantity-1)" [disabled]="quantity<=0">-</button>
+    <input (change)="changeQuantityInput($event)" [(ngModel)]="quantity" type="number" class="product-quantity"  />
+    <button (click)="changeQuantity(quantity+1)" class="count" >
+        +
+    </button>
+</div>
+<div class="col-price">
+    <span class="product-price">{{product.price}}</span><span class="product-currency currency">€</span>
+</div>
+<div class="col-total" >
+    <span class="product-price">{{product.price * quantity}}</span><span
+        class="product-currency currency">€</span>
+</div>
