@@ -1,6 +1,3 @@
-
-markdown
-Copy code
 # Cabify Challenge Frontend by Alejandro Monteseirin
 
 ## Configuration for Development: How to Start the Project
